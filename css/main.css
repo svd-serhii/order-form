@@ -114,6 +114,7 @@ css .order {
 }
 
 .input--form:focus + .label--input,
+.input--form:hover + .label--input,
 .input--form:not(:placeholder-shown) + .label--input {
   transform: translateY(-32px);
   font-size: 14px;
