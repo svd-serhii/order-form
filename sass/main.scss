@@ -207,6 +207,7 @@ css
 }
 
 .dropdown__button {
+  outline: none;
   position: relative;
   display: block;
   width: 100%;
@@ -214,7 +215,6 @@ css
   background: #ffffff;
   border-bottom: 1px solid #487996;
   height: 24px;
-
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
