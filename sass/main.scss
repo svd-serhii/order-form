@@ -100,52 +100,19 @@ css
   color: #2b2b2b;
   padding-bottom: 4px;
   transition: transform 500ms ease;
+  transition: font-size 200ms;
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.11;
   }
 }
+
 .input--form:valid ~ .input-title,
-.input--form:hover ~ .input-title,
+// .input--form:hover ~ .input-title,
 .input--form:focus ~ .input-title {
   transform: translateY(-32px);
   font-size: 14px;
   line-height: 1.42;
-}
-
-.input--form:hover:placeholder-shown,
-.input--form:focus::-webkit-placeholder {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #cdcdcd;
-  transition: color 500ms;
-  @media screen and (min-width: 1440px) {
-    font-size: 18px;
-    line-height: 1.11;
-  }
-}
-
-.input--form:hover::-webkit-placeholder {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #cdcdcd;
-  transition: color 500ms;
-  @media screen and (min-width: 1440px) {
-    font-size: 18px;
-    line-height: 1.11;
-  }
-}
-
-.input--form:not(:hover)::-webkit-placeholder,
-.input--form:not(:focus)::-webkit-placeholder {
-  color: #ffffff;
-  transition: color 500ms;
 }
 
 .order-form__text {
