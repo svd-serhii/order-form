@@ -113,8 +113,8 @@ css
   line-height: 1.42;
 }
 
-// .input--form:hover:placeholder-shown,
-.input--form:focus::placeholder {
+.input--form:hover:placeholder-shown,
+.input--form:focus::-webkit-placeholder {
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -128,7 +128,7 @@ css
   }
 }
 
-.input--form:hover::placeholder {
+.input--form:hover::-webkit-placeholder {
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -142,8 +142,8 @@ css
   }
 }
 
-.input--form:not(:hover)::placeholder,
-.input--form:not(:focus)::placeholder {
+.input--form:not(:hover)::-webkit-placeholder,
+.input--form:not(:focus)::-webkit-placeholder {
   color: #ffffff;
   transition: color 500ms;
 }
