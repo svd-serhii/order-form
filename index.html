@@ -19,9 +19,12 @@
                 class="order-form__input input--form"
                 name="client-name"
                 id="client-name"
-                placeholder=" "
+                placeholder="First Name"
+                required="required"
+                required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" 
+                title="Username must be two words separated by space."
               />
-              <label for="client-name" class="order-form__label label--input">Імʼя </label>
+              <span class="input-title">Імʼя </span>
             </div>
             <div class="order-form__field field--input">
               <input
@@ -29,9 +32,10 @@
                 class="order-form__input input--form"
                 name="client-mail"
                 id="client-mail"
-                placeholder=" "
+                placeholder="name@mail.com"
+                required="required"
               />
-              <label for="client-mail" class="order-form__label label--input">Email </label>
+              <span class="input-title">Email</span>
             </div>
             <div class="order-form__field field--select">
               <div class="dropdown">
@@ -87,88 +91,9 @@
             <p class="textarea-notice">*Прикріпіть зображення/ креслення/STL/Obj/CAD-модель</p>
             <button type="submit" class="btn order-form__btn">Відправити</button>
           </form>
-          <!--  -->
-          <!-- <div class="rectangle46"></div>
-          <div class="rectangle60"></div>
-          <div class="rectangle68"></div>
-          <div class="rectangle63"></div>
-          <div class="rectangle65"></div>
-          <div class="rectangle19"></div> -->
-        </div>
-        <!-- <div class="contacts-frame">
-          <ul class="take-order-contacts__list">
-            <li class="take-order-contacts__item">
-              <h2 class="contacts__title">ТЕЛЕФОНИ</h2>
-              <a href="tel:+380957384551" class="contacts__link">+38 (095) -73-84-551</a>
-              <a href="tel:+380980025235" class="contacts__link">+38 (098) -00-25-235</a>
-            </li>
-            <li class="take-order-contacts__item">
-              <h2 class="contacts__title">Email</h2>
-              <a href="mailto:3dfreedom.info@gmail.com" class="contacts__link">3dfreedom.info@gmail.com</a>
-            </li>
-            <li class="take-order-contacts__item">
-              <h2 class="contacts__title">РОБОЧИЙ ЧАС</h2>
-              <p class="contacts__text">
-                <span>Пн-пт:</span>
-                з 8:00 до 19:00
-              </p>
-              <p class="contacts__text">
-                <span>Сб, Нд:</span>
-                з 10:00 до 17:00
-              </p>
-            </li>
-          </ul>
-          <div class="contacts__mosaics">
-            <img
-              srcset="./images/take-order-page/mosaics1-1x.jpeg 1x, ./images/take-order-page/mosaics1-2x.jpeg 2x"
-              src="./images/take-order-page/mosaics1-1x.jpeg"
-              alt="Частина мозаїки"
-              class="contacts__photo one"
-              width="138"
-            />
-            <img
-              srcset="./images/take-order-page/mosaics2-1x.jpeg 1x, ./images/take-order-page/mosaics2-2x.jpeg 2x"
-              src="./images/take-order-page/mosaics2-1x.jpeg"
-              alt="Частина мозаїки"
-              class="contacts__photo two"
-              width="138"
-            />
-            <img
-              srcset="./images/take-order-page/mosaics3-1x.jpeg 1x, ./images/take-order-page/mosaics3-2x.jpeg 2x"
-              src="./images/take-order-page/mosaics3-1x.jpeg"
-              alt="Частина мозаїки"
-              class="contacts__photo three"
-              width="138"
-            />
-            <img
-              srcset="./images/take-order-page/mosaics4-1x.jpeg 1x, ./images/take-order-page/mosaics4-2x.jpeg 2x"
-              src="./images/take-order-page/mosaics4-1x.jpeg"
-              alt="Частина мозаїки"
-              class="contacts__photo four"
-              width="138"
-            />
-            <img
-              srcset="./images/take-order-page/mosaics5-1x.jpeg 1x, ./images/take-order-page/mosaics5-2x.jpeg 2x"
-              src="./images/take-order-page/mosaics5-1x.jpeg"
-              alt="Частина мозаїки"
-              class="contacts__photo five"
-              width="138"
-            />
-            <img
-              srcset="./images/take-order-page/mosaics6-1x.jpeg 1x, ./images/take-order-page/mosaics6-2x.jpeg 2x"
-              src="./images/take-order-page/mosaics6-1x.jpeg"
-              alt="Частина мозаїки"
-              class="contacts__photo six"
-              width="138"
-            />
-          </div>
-          <!--  -->
-        <!-- <div class="rectangle67 z-index"></div>
-          <div class="rectangle69 z-index"></div> -->
-        -->
       </div>
     </section>
 
-    <script defer src="./index.js"></script>
+    <script src="order-form.js"></script>
   </body>
 </html>

@@ -78,6 +78,7 @@ css .order {
   font-size: 16px;
   line-height: 1.25;
   color: #2b2b2b;
+  transition: color 500ms ease;
 }
 @media screen and (min-width: 1440px) {
   .order-form__input,
@@ -91,10 +92,9 @@ css .order {
   position: relative;
 }
 
-.label--input {
+.input-title {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   left: 0;
   font-family: inherit;
   font-style: normal;
@@ -104,21 +104,59 @@ css .order {
   text-transform: capitalize;
   color: #2b2b2b;
   padding-bottom: 4px;
-  transition: transform 250ms linear;
+  transition: transform 500ms ease;
 }
 @media screen and (min-width: 1440px) {
-  .label--input {
+  .input-title {
     font-size: 18px;
     line-height: 1.11;
   }
 }
 
-.input--form:focus + .label--input,
-.input--form:hover + .label--input,
-.input--form:not(:placeholder-shown) + .label--input {
+.input--form:valid ~ .input-title,
+.input--form:hover ~ .input-title,
+.input--form:focus ~ .input-title {
   transform: translateY(-32px);
   font-size: 14px;
   line-height: 1.42;
+}
+
+.input--form:focus::placeholder {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #cdcdcd;
+  transition: color 500ms;
+}
+@media screen and (min-width: 1440px) {
+  .input--form:focus::placeholder {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+.input--form:hover::placeholder {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #cdcdcd;
+  transition: color 500ms;
+}
+@media screen and (min-width: 1440px) {
+  .input--form:hover::placeholder {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+.input--form:not(:hover)::placeholder,
+.input--form:not(:focus)::placeholder {
+  color: #ffffff;
+  transition: color 500ms;
 }
 
 .order-form__text {
@@ -135,7 +173,7 @@ css .order {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  color: #2b2b2b;
+  color: #cdcdcd;
 }
 @media screen and (min-width: 1440px) {
   .order-form__text::placeholder {
